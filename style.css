@@ -1,11 +1,20 @@
 /*-----------------------------------cabeçalho----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body{
+    background-color: white;
+}
+
+
 .main-header{
     position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+    border-radius: 4px;
 }
 
 
@@ -17,12 +26,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    padding: 14px 0;
 }
 
 .nav-item{
     text-transform: uppercase;
     color:red;
+}
+
+.logo-zoom{
+    margin-left: 40px;
+    
 }
 
 
@@ -31,9 +45,12 @@
 /*------------------------------Corpo do site---------------------------------------*/
 
 .title-large{
-  font-size: 38px; 
-  color:rgb(177, 116, 4); 
+  font-size: 38px;
+  background-color: rgb(231, 174, 104); 
+  color:rgb(34, 33, 33); 
   text-align: center;
+  font-family: "Mingzat";
+  padding-bottom: 30px;
 }
 
 .title-median{
@@ -56,7 +73,7 @@
 }
 
 .product-container{
-display: flex;
+display: block;
 flex-wrap:wrap ;
 justify-content: space-between;
 gap: 40px;
@@ -64,14 +81,15 @@ padding-bottom: 30px;
 }
 
 .product{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:block;
+    flex-direction:column;
+    margin-bottom: 150px;
 }
 
 .product-title{
-    font-size: 20px;
-    margin-bottom: 6px;
+    font-size: 35px;
+    margin-bottom: 7px;
+    margin-left: 135px;
 }
 
 .product-image{
@@ -93,9 +111,11 @@ padding-bottom: 30px;
     color: black;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 4px 2px;
+    padding: 10px 70px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 100%;
+    margin-right: 1300px;
 }
 
 .button:hover{
@@ -103,37 +123,45 @@ padding-bottom: 30px;
 }
 
 
+.logos{
+    background-color: white;
+    margin-left:1600px ;
+}
+
+
 /*---------------------------------Rodapé--------------------------*/
 
 .main-footer{
-    background-color: chocolate;
+    background-color: rgb(126, 36, 36);
     background-size: 100% 100%;
-    padding: 15px 0;
+    padding: 40px 0;
+    border-radius: 8px;
 }
 
 .footer-container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .title-smaller{
      color: black;
      font-size: 26px;
+     font-family: 'PT Sans' sans-serif;
+     margin-left: 20px;
 }
 
 .list-container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .footer-item{
     width: 50px;
     height: 50px;
-    padding: 15 0;
+    padding: 18px 0;
+    
 }
 
 .footer-item + .footer-item{
-    margin-left: 16px;
+    margin-left: 100px;
 }
